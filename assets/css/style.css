@@ -1,7 +1,7 @@
 :root {
   --green: rgb(132, 163, 146);
   --brown: rgb(224, 110, 110);
-  --text: rgb(22, 103, 117);
+  --text: black;
 }
 
 * {
@@ -33,7 +33,7 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 925px) {
   header {
     display: flex;
     flex-direction: column;
@@ -49,6 +49,7 @@ header {
 
 h1 {
   font-size: 50px;
+  color: var(--text);
 }
 
 nav:hover {
@@ -58,6 +59,7 @@ nav:hover {
 #ame {
   border: 1px dashed black;
   padding: 5px;
+  text-align: center;
 }
 
 #ame:hover {
@@ -69,6 +71,7 @@ nav:hover {
 #mw {
   border: 1px dashed black;
   padding: 5px;
+  text-align: center;
 }
 
 #mw:hover {
@@ -80,6 +83,7 @@ nav:hover {
 #con {
   border: 1px dashed black;
   padding: 5px;
+  text-align: center;
 }
 
 #con:hover {
@@ -107,6 +111,7 @@ h2 {
   padding: 20px 30px;
   margin-left: 10px;
   border: 5px solid lightcoral;
+  width: 210px;
 }
 
 #About-Me > p {
@@ -129,29 +134,41 @@ h2 {
   flex-wrap: wrap;
 }
 
+.sec > p {
+  width: 75%;
+}
+
 #bwang {
-  width: 20%;
-  height: 100%
+  width: 25%;
+  height: 100%;
 }
 
 #brian {
   width: 100%;
   object-fit: cover;
   background-position: center;
+  margin-top: 10px;
 }
 
 #prework {
-  width: 50%;
+  width: 100%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 925px) {
   .sec  {
   display:flex;
   flex-direction: column;
  } 
   h2 {
-  font-size: 10px;
+  font-size: 20px;
   padding: 10px 20px;
   margin: 10px;
+ }
+ #prework {
+  width:100%;
+ }
+ p {
+  margin-top: 10px;
+  margin-bottom: 10px;
  }
 }
