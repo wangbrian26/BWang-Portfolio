@@ -14,12 +14,17 @@ a {
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+}
+
 /* End of universal styling */
 
 header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 1 1 auto;
   justify-content: space-between;
   align-items: center;
   background-color: var(--green);
@@ -93,7 +98,7 @@ body {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 h2 {
@@ -121,12 +126,32 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+#bwang {
+  width: 20%;
+  height: 100%
 }
 
 #brian {
-  width: 20%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
 }
 
 #prework {
   width: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .sec  {
+  display:flex;
+  flex-direction: column;
+ } 
+  h2 {
+  font-size: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+ }
 }
