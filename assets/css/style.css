@@ -1,0 +1,132 @@
+:root {
+  --green: rgb(132, 163, 146);
+  --brown: rgb(224, 110, 110);
+  --text: rgb(22, 103, 117);
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* End of universal styling */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  padding: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 825px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+}
+
+h1 {
+  font-size: 50px;
+}
+
+nav:hover {
+  font-size: larger;
+}
+
+#ame {
+  border: 1px dashed black;
+  padding: 5px;
+}
+
+#ame:hover {
+  color: var(--brown);
+  border: 3px dashed var(--brown);
+  font-weight: bolder;
+}
+
+#mw {
+  border: 1px dashed black;
+  padding: 5px;
+}
+
+#mw:hover {
+  color: var(--brown);
+  border: 3px dashed var(--brown);
+  font-weight: bolder;
+}
+
+#con {
+  border: 1px dashed black;
+  padding: 5px;
+}
+
+#con:hover {
+  color: var(--brown);
+  border: 3px dashed var(--brown);
+  font-weight: bolder;
+}
+
+/* End of header section */
+
+body {
+  background-color: bisque;
+}
+
+#About-Me {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 30px;
+  margin-left: 10px;
+  border: 5px solid lightcoral;
+}
+
+#About-Me > p {
+  margin: 0px 50px;
+
+}
+
+#My-Work {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#Contact {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#brian {
+  width: 20%;
+}
+
+#prework {
+  width: 50%;
+}
