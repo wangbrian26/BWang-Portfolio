@@ -31,6 +31,7 @@ header {
   padding: 10px;
   padding-bottom: 40px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 925px) {
@@ -105,17 +106,6 @@ body {
   width: 100vw;
 }
 
-h2 {
-  font-size: 40px;
-  text-align: center;
-  padding: 15px;
-  margin-left: 10px;
-  margin-right: 20px;
-  border: 5px solid lightcoral;
-  width: 210px;
-  position:relative;
-}
-
 #About-Me > p {
   margin: 0px 50px;
 
@@ -128,12 +118,23 @@ h2 {
   width: 100%;
 }
 
-#Contact {
+#contact-info {
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+  border: 5px solid lightcoral;
+  width: 210px;
+  position:relative;
 }
 
 .sec > p {
@@ -142,7 +143,6 @@ h2 {
 
 #bwang {
   width: 25%;
-  height: 100%;
 }
 
 #brian {
@@ -152,12 +152,24 @@ h2 {
   margin-top: 10px;
 }
 
+#work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #prework {
   width: 100%;
+  display:flex;
+  flex: 2 1 600px;
+}
+
+.placeholder {
+  display: flex;
+  flex: 1 2 300px;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%
 }
