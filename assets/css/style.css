@@ -1,7 +1,9 @@
 :root {
   --green: rgb(132, 163, 146);
-  --brown: rgb(224, 110, 110);
+  --white: rgb(255, 255, 255);
   --text: black;
+  --coral: rgb(240, 128, 128);
+  --offwhite: rgba(255, 255, 255, 0.829);
 }
 
 * {
@@ -34,20 +36,6 @@ header {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 925px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-}
-
 h1 {
   font-size: 50px;
   color: var(--text);
@@ -57,73 +45,30 @@ nav:hover {
   font-size: larger;
 }
 
-#ame {
+.link {
   border: 1px dashed black;
   padding: 5px;
   text-align: center;
 }
 
-#ame:hover {
-  color: var(--brown);
-  border: 3px dashed var(--brown);
-  font-weight: bolder;
-}
-
-#mw {
-  border: 1px dashed black;
-  padding: 5px;
-  text-align: center;
-}
-
-#mw:hover {
-  color: var(--brown);
-  border: 3px dashed var(--brown);
-  font-weight: bolder;
-}
-
-#con {
-  border: 1px dashed black;
-  padding: 5px;
-  text-align: center;
-}
-
-#con:hover {
-  color: var(--brown);
-  border: 3px dashed var(--brown);
+.link:hover {
+  color: var(--white);
+  border: 3px dashed var(--white);
   font-weight: bolder;
 }
 
 /* End of header section */
 
 body {
+  background-image:url(/assets/images/Background.jpg);
   background-color: bisque;
 }
 
-#About-Me {
+.sec {
   display:flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-}
-
-#About-Me > p {
-  margin: 0px 50px;
-
-}
-
-#My-Work {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-#contact-info {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 h2 {
@@ -132,13 +77,19 @@ h2 {
   padding: 15px;
   margin-left: 10px;
   margin-right: 20px;
-  border: 5px solid lightcoral;
+  border: 10px, solid, var(--coral);
   width: 210px;
   position:relative;
+  background-color: var(--offwhite);
+}
+
+#about {
+  background-color: var(--offwhite);
 }
 
 .sec > p {
   width: 75%;
+  background-color: var(--offwhite);
 }
 
 #bwang {
@@ -158,15 +109,27 @@ h2 {
 }
 
 #prework {
+  height: 400px;
   width: 100%;
+  object-fit: cover;
   display:flex;
   flex: 2 1 600px;
+}
+
+#horiseon {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  object-fit: cover;
+  background-position: center;
 }
 
 .placeholder {
   display: flex;
   flex: 1 2 300px;
 }
+
+/* Below is the styling for the footer section*/
 
 footer {
   position: relative;
@@ -177,11 +140,24 @@ footer {
 footer > p {
   text-align: center;
 }
+
+/* Below helps reformat for smaller screens */
+
 @media screen and (max-width: 925px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
   .sec  {
   display:flex;
   flex-direction: column;
- } 
+  } 
   h2 {
   font-size: 20px;
   padding: 10px 20px;
