@@ -158,6 +158,9 @@ footer > p {
 /* CSS for smaller screens */
 
 @media screen and (max-width: 925px) {
+  main {
+    margin-left: auto;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -176,6 +179,9 @@ footer > p {
     font-size: 20px;
     padding: 10px 20px;
     margin: 10px;
+    border-right: none;
+    border-bottom: 5px solid white;
+    text-align: center;
   }
   #prework {
     width: 100%;
@@ -183,5 +189,8 @@ footer > p {
   p {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  img {
+    margin: 10px;
   }
 }
