@@ -18,9 +18,18 @@ a {
 
 body {
   width: 100%;
+  background-image: url(/assets/images/Background.jpg);
+}
+
+main {
+  width: 90%;
+  margin-left: 5px;
+  margin-right: auto;
 }
 
 /* End of universal styling */
+
+/* CSS for Header */
 
 header {
   display: flex;
@@ -32,7 +41,6 @@ header {
   background-color: var(--green);
   padding: 10px;
   padding-bottom: 40px;
-  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -57,50 +65,46 @@ nav:hover {
   font-weight: bolder;
 }
 
-/* End of header section */
+/* End of header */
 
-body {
-  background-image:url(/assets/images/Background.jpg);
-  background-color: bisque;
-}
+/* CSS for body */
 
 .sec {
-  display:flex;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
-  width: 100vw;
+  margin-top: 20px;
 }
 
 h2 {
   font-size: 40px;
-  text-align: center;
   padding: 15px;
-  margin-left: 10px;
   margin-right: 20px;
-  border: 10px, solid, var(--coral);
   width: 210px;
-  position:relative;
-  background-color: var(--offwhite);
+  position: relative;
+  color: var(--offwhite);
+  text-align: end;
+  border-right: 10px solid white;
 }
 
 #about {
   background-color: var(--offwhite);
-}
-
-.sec > p {
-  width: 75%;
-  background-color: var(--offwhite);
+  width: 55%;
+  padding: 1%;
+  border-radius: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #bwang {
-  width: 25%;
+  width: auto;
+  margin-right: 0px;
+  position: relative;
 }
 
 #brian {
-  width: 100%;
+  width: 250px;
   object-fit: cover;
   background-position: center;
-  margin-top: 10px;
 }
 
 #work {
@@ -108,40 +112,50 @@ h2 {
   flex-wrap: wrap;
 }
 
+#work > figure:hover {
+  cursor: grabbing;
+}
+
 #prework {
-  height: 400px;
   width: 100%;
-  object-fit: cover;
-  display:flex;
-  flex: 2 1 600px;
 }
 
-#horiseon {
-  height: 200px;
+.sub {
   width: 100%;
-  margin-bottom: 25px;
-  object-fit: cover;
-  background-position: center;
 }
 
-.placeholder {
+#contact-info {
+  width: 100%;
   display: flex;
-  flex: 1 2 300px;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
 }
 
-/* Below is the styling for the footer section*/
+#contact-info > a {
+  border: 2px solid var(--coral);
+  background-color: var(--offwhite);
+  width: 50%;
+  margin: 5px auto;
+}
+
+
+/* End of body section */
+
+/* CSS for footer*/
 
 footer {
   position: relative;
   bottom: 0px;
-  width: 100%
+  width: 100%;
 }
 
 footer > p {
   text-align: center;
+  background-color: var(--offwhite);
 }
 
-/* Below helps reformat for smaller screens */
+/* CSS for smaller screens */
 
 @media screen and (max-width: 925px) {
   header {
@@ -154,20 +168,20 @@ footer > p {
     flex-direction: column;
     margin-top: 20px;
   }
-  .sec  {
-  display:flex;
-  flex-direction: column;
-  } 
+  .sec {
+    display: flex;
+    flex-direction: column;
+  }
   h2 {
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: 10px;
- }
- #prework {
-  width:100%;
- }
- p {
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  #prework {
+    width: 100%;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
